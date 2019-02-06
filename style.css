@@ -1,0 +1,76 @@
+body {
+	display: flex;
+	background-color: black;
+	height: 100vh;
+}
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33.333%;
+}
+
+h2 {
+	color: white;
+	font-size: 30px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes color {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: blue;
+	}
+	
+	100% {
+		color: red;
+	}
+}
+
+@keyframes size {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rotate {
+	animation-name: rotate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.color {
+  animation-name: color;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.size {
+  animation-name: size;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
