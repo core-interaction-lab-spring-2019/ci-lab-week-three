@@ -16,7 +16,7 @@ h2 {
 	font-size: 30px;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     transform: rotate(0);
 	}
@@ -52,7 +52,7 @@ h2 {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .rotate {
 	animation-name: rotate;
